@@ -1,22 +1,23 @@
 <script>
-    const now = new Date();
+    const now = new Date()
     const yearNow = now.getFullYear()
 
 
-    export let menu;
-    export let text;
-    export let dataStart;
+    export let yearStart
+    export let text
+    export let phoneService
+    export let menu
+
 </script>
 
 <footer class="bg-gray-50">
     <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-            <p>test</p>
-            <!--{#each menu as { value, path }}-->
-            <!--    <div class="px-5 py-2">-->
-            <!--        <a href="/{ path }" class="text-base text-gray-500"> { value } </a>-->
-            <!--    </div>-->
-            <!--{/each}-->
+            {#each menu as { value, path }}
+                <div class="px-5 py-2">
+                    <a href="/{ path }" class="text-base text-gray-500"> { value } </a>
+                </div>
+            {/each}
         </nav>
         <!--        <div class="mt-8 flex justify-center space-x-6">-->
         <!--            <a href="#" class="text-gray-400 hover:text-gray-500">-->
@@ -54,8 +55,8 @@
         <!--                </svg>-->
         <!--            </a>-->
         <!--        </div>-->
-        <p class="mt-8 text-center text-base text-gray-400">&copy; { dataStart }-{ yearNow }. { text }
-            <br>Обслуживание сайта +7 (495) 147-55-50
+        <p class="mt-8 text-center text-base text-gray-400">&copy; { yearStart }-{ yearNow }. { text }
+            <br>Обслуживание сайта { phoneService }
         </p>
     </div>
 </footer>
