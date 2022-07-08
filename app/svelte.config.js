@@ -13,7 +13,9 @@ const config = {
 	],
 	kit: {
 		adapter: adapter(),
-
+		alias: {
+			$store: 'src/store'
+		},
 		package: {
 			exports: (filepath) => {
 				if (filepath.endsWith('.d.ts')) return false;
