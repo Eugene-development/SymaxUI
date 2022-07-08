@@ -1,8 +1,8 @@
 <script>
     import {useInvert} from "larux/broker";
-    import {mobileMenu} from "../../../stores.js";
+    import {visibleMobileMenu} from "../../../stores.js";
     const { invert } = useInvert;
-    const changeVisibleMobileMenu = () => mobileMenu.update(invert);
+    const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
     export let menu;
     export let logo;
 </script>
@@ -36,7 +36,7 @@
 </div>
 
 
-{#if $mobileMenu}
+{#if $visibleMobileMenu}
 
     <div class="absolute z-50 top-0 inset-x-0 p-2 transition transform origin-top lg:hidden bg-gray-50">
         <div class="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden">
