@@ -1,7 +1,7 @@
 <script lang="ts">
 	import AutoForm from '$lib/AutoForm.svelte';
 
-	import { Button } from '$lib/broker.js';
+	import { Button } from '../lib/ui/broker.js';
 </script>
 
 <AutoForm />

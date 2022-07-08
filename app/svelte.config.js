@@ -14,7 +14,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$store: 'src/store'
+			$store: 'src/lib/store'
 		},
 		package: {
 			exports: (filepath) => {
