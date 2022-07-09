@@ -1,8 +1,11 @@
 <script>
-    import {useInvert} from "larux/broker";
-    import {visibleMobileMenu} from "../../../store/stores.js";
+    import {useInvert, useFunc} from '../../../functions/broker';
+    import {visibleMobileMenu} from "$store/stores";
     const { invert } = useInvert;
     const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
+
+    const {testFunction} = useFunc;
+    const testFunc = () => testFunction('1234567')
     export let menu;
     export let logo;
 </script>
@@ -17,7 +20,7 @@
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
 <!--                    <button type="button" class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">-->
-                    <button on:click={changeVisibleMobileMenu} type="button" class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
+                    <button on:click={changeVisibleMobileMenu}  on:click={testFunc} type="button" class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <!-- Heroicon name: outline/menu -->
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

@@ -1,6 +1,6 @@
 <script>
-    import {useInvert} from "larux/broker";
-    import {visibleMobileMenu} from "../../../store/stores.js";
+    import {useInvert} from '../../../functions/broker';
+    import {visibleMobileMenu} from "$store/stores";
     const { invert } = useInvert;
     const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
     export let menu;
