@@ -15,7 +15,7 @@ const config = {
 		alias: {
 			$store: 'src/lib/store',
 			$functions: 'src/lib/functions'
-		},
+		}
 	}
 };
 
