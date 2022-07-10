@@ -25,7 +25,7 @@ const menu = [
     },
 ]
 
-const content_Footer_V1 = {
+const content_Footer_v1 = {
     yearStart,
     text,
     phoneService,
@@ -36,7 +36,7 @@ const content_Footer_V1 = {
 export const get = () => {
     return {
         body: {
-            content_Footer_V1,
+            content_Footer_v1,
         }
     };
 };

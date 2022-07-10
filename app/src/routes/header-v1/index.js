@@ -25,7 +25,7 @@ const menu = [
 ]
 
 
-const content_Header_V1 = {
+const content_Header_v1 = {
     menu,
     phone,
     email
@@ -34,7 +34,7 @@ const content_Header_V1 = {
 export const get = () => {
     return {
         body: {
-            content_Header_V1,
+            content_Header_v1,
         }
     };
 };

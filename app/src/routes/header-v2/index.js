@@ -22,7 +22,7 @@ const menu = [
     },
 ]
 
-const content_Header_V2 = {
+const content_Header_v2 = {
     menu,
     logo
 };
@@ -31,7 +31,7 @@ const content_Header_V2 = {
 export const get = () => {
     return {
         body: {
-            content_Header_V2,
+            content_Header_v2,
         }
     };
 };
