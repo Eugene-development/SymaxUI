@@ -13,7 +13,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$store: '../src/lib/store',
+			$store: 'src/lib/store',
 			$functions: 'src/lib/functions'
 		},
 	}

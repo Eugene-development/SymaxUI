@@ -1,6 +1,7 @@
 <script>
     import {useInvert, useFunc} from '../../../functions/broker';
-    import {visibleMobileMenu} from "../../../../../src/store/stores.js";
+    import {visibleMobileMenu} from "../../../store/stores.js";
+    // import {visibleMobileMenu} from "../../../../../src/store/stores.js";
     const { invert } = useInvert;
     const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
 
