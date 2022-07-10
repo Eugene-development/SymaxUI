@@ -1,5 +1,7 @@
 const phone = '+7 (495) 147-55-50'
 const email = 'info@mos-mebel.org'
+const logo = 'https://storage.yandexcloud.net/brand-logo/mos-mebel/5.png'
+
 
 const menu = [
     {
@@ -28,7 +30,7 @@ const menu = [
 const content_Header_v1 = {
     menu,
     phone,
-    email
+    email,logo
 };
 
 export const get = () => {
