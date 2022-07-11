@@ -1,5 +1,5 @@
 <script>
-	import { Header_v2, Mobile_Menu_v1 } from '../../lib/ui/broker.js';
+	import { Header_v2, Mobile_Menu_v1 } from '../../../lib/ui/broker.js';
 	export let content_Header_v2;
 </script>
 

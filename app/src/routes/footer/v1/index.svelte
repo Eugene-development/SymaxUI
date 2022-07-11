@@ -1,5 +1,5 @@
 <script>
-	import { Footer_v1 } from '../../lib/ui/broker.js';
+	import { Footer_v1 } from '../../../lib/ui/broker.js';
 	export let content_Footer_v1;
 </script>
 
