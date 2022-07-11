@@ -3,6 +3,9 @@
 	import { useInvert } from '../../../functions/broker';
 	const { invertToFalse } = useInvert;
 	const changeVisibleBanner_01 = () => visibleBanner_01.update(invertToFalse);
+
+	export let text
+	export let link
 </script>
 
 {#if $visibleBanner_01}
@@ -10,11 +13,11 @@
 		<div class="max-w-7xl mx-auto py-2 px-3 sm:px-6 lg:px-8">
 			<div class="pr-16 sm:text-center sm:px-16">
 				<p class="font-medium text-white antialiased">
-					<span class="md:hidden"> Снижены цены на древесину! </span>
-					<span class="hidden md:inline"> Хорошие новости! Снижены цены на древесину. </span>
+					<span class="sm:hidden"> {text.mobile} </span>
+					<span class="hidden sm:inline"> {text.desktop} </span>
 					<span class="block sm:ml-2 sm:inline-block">
-						<a href="/category/pilomaterial" class="text-white font-bold underline">
-							Подробнее <span aria-hidden="true">&rarr;</span></a
+						<a href="/{link.path}" class="text-white font-bold underline">
+							{link.value}</a
 						>
 					</span>
 				</p>
