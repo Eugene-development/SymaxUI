@@ -27,7 +27,7 @@ const menu = [
 const content_Header_v1 = {
 	menu,
 	phone,
-	email,
+	email
 };
 
 export const get = () => {
