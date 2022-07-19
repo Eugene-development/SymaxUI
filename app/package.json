@@ -1,6 +1,6 @@
 {
 	"name": "symax",
-	"version": "0.0.23",
+	"version": "0.0.25",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"gsap": "^3.10.4"
+		"gsap": "^3.10.4",
+		"larux": "latest"
 	}
 }
