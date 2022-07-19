@@ -4,6 +4,7 @@ const description = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
 
 const posts = [
     {
+        id: 1,
         img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV1/kitchen.jpeg',
         alt: '',
         title: 'From the blog\n',
@@ -13,6 +14,7 @@ const posts = [
         date: 'Mar 16, 2020'
     },
     {
+        id: 2,
         img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV1/kitchen.jpeg',
         alt: '',
         title: 'From the blog\n',
@@ -22,6 +24,7 @@ const posts = [
         date: 'Mar 16, 2020'
     },
     {
+        id: 3,
         img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV1/kitchen.jpeg',
         alt: '',
         title: 'From the blog\n',

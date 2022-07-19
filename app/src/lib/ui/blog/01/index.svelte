@@ -15,31 +15,31 @@
         </div>
         <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
 
-            {#each posts as {img, alt, title, description, avatar, author, date}}
-            <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+            {#each posts as {id, img, alt, title, description, avatar, author, date}}
+            <a href="/post/{id}" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 <div class="flex-shrink-0">
                     <img class="h-64 w-full object-cover" src="{img}" alt="">
                 </div>
                 <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div class="flex-1">
-                        <p class="text-sm font-medium text-cyan-600">
-                            <a href="#" class="hover:underline"> Статья </a>
-                        </p>
-                        <a href="#" class="block mt-2">
+                        <div class="text-sm font-medium text-cyan-600">
+                            <span class="hover:underline"> Статья </span>
+                        </div>
+                        <div class="block mt-2">
                             <p class="text-xl font-semibold text-gray-900">{title}</p>
                             <p class="mt-3 text-base text-gray-500">{description}</p>
-                        </a>
+                        </div>
                     </div>
                     <div class="mt-6 flex items-center">
                         <div class="flex-shrink-0">
-                            <a href="#">
+                            <div>
                                 <span class="sr-only">{author}</span>
                                 <img class="h-10 w-10 rounded-full" src="{avatar}" alt="">
-                            </a>
+                            </div>
                         </div>
                         <div class="ml-3">
                             <p class="text-sm font-medium text-gray-900">
-                                <a href="#" class="hover:underline"> {author} </a>
+                                <span class="hover:underline"> {author} </span>
                             </p>
                             <div class="flex space-x-1 text-sm text-gray-500">
                                 <time datetime="2020-03-16"> {date} </time>
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
                 {/each}
 
         </div>
