@@ -7,15 +7,10 @@ const gsapOpacity = (boxParam) => {
 	});
 };
 
-const gsapText = (param1, param2) => {
+const gsapTextToRight = (param_1, param_2) => {
 	const tl = gsap.timeline();
 	const duration = 3;
-	tl.to('#' + param1, { duration, x: 10, delay: 1 }).to('#' + param2, {
-		duration,
-		x: 10,
-		repeat: 3,
-		yoyo: true
-	});
+	tl.to('#' + param_1, { duration, x: 10, delay: 1 }).to('#' + param_2, { duration, x: 10 });
 };
 
 const toBig = (param1) => {
@@ -25,6 +20,6 @@ const toBig = (param1) => {
 
 export const useGSAP = {
 	gsapOpacity,
-	gsapText,
+	gsapTextToRight,
 	toBig
 };

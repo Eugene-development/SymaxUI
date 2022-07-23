@@ -4,8 +4,8 @@
 	const { invertToFalse } = useInvert;
 	const changeVisibleBanner_01 = () => visibleBanner_01.update(invertToFalse);
 
-	export let text
-	export let link
+	export let text;
+	export let link;
 </script>
 
 {#if $visibleBanner_01}
@@ -16,9 +16,7 @@
 					<span class="sm:hidden"> {text.mobile} </span>
 					<span class="hidden sm:inline"> {text.desktop} </span>
 					<span class="block sm:ml-2 sm:inline-block">
-						<a href="/{link.path}" class="text-white font-bold underline">
-							{link.value}</a
-						>
+						<a href="/{link.path}" class="text-white font-bold underline"> {link.value}</a>
 					</span>
 				</p>
 			</div>

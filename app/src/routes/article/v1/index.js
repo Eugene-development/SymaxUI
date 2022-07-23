@@ -1,5 +1,5 @@
-const overhead = 'TRANSACTIONS'
-const header = 'What makes us different'
+const overhead = 'TRANSACTIONS';
+const header = 'What makes us different';
 const text = `
             <div class="relative z-10">
                 <div class="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
@@ -26,41 +26,42 @@ const text = `
                     </div>
                 </div>
             </div>
-`
+`;
 const testimonials = [
-    {
-        text: 'Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.',
-        avatar: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80',
-        alt: '',
-        name: 'Judith Black'
-    },
-    {
-        text: 'Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.',
-        avatar: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80',
-        alt: '',
-        name: 'Judith Black'
-    },
-    {
-        text: 'Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.',
-        avatar: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80',
-        alt: '',
-        name: 'Judith Black'
-    },
-]
+	{
+		text: 'Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.',
+		avatar:
+			'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80',
+		alt: '',
+		name: 'Judith Black'
+	},
+	{
+		text: 'Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.',
+		avatar:
+			'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80',
+		alt: '',
+		name: 'Judith Black'
+	},
+	{
+		text: 'Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus.',
+		avatar:
+			'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80',
+		alt: '',
+		name: 'Judith Black'
+	}
+];
 
 const contentArticle_v1 = {
-    overhead,
-    header,
-    text,
-    testimonials
-}
-
-
+	overhead,
+	header,
+	text,
+	testimonials
+};
 
 export const get = () => {
-    return {
-        body: {
-            contentArticle_v1
-        }
-    };
+	return {
+		body: {
+			contentArticle_v1
+		}
+	};
 };
