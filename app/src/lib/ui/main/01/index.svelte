@@ -5,13 +5,11 @@
 	const { gsapTextToRight } = useGSAP;
 
 	const boxParam = {
-		box: 'box',
-		box1: 'box1',
-		box2: 'box2',
-		box3: 'box3'
+		id_1: 'id_1',
+		id_2: 'id_2',
 	};
 	onMount(async () => {
-		await gsapTextToRight(boxParam.box1, boxParam.box2);
+		await gsapTextToRight(boxParam.id_1, boxParam.id_2);
 	});
 </script>
 
@@ -82,7 +80,7 @@
 							</h1>
 							<p
 								class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-base lg:text-base xl:text-base antialiased"
-								id={boxParam.box1}
+								id={boxParam.id_1}
 							>
 								Шкафы купе по низким ценам и с разными вариантами установки дверей. Вы можете
 								заказать у нас как шкаф эконом сегмента так и премиальный вариант. Также вы можете
@@ -90,7 +88,7 @@
 							</p>
 							<p
 								class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-base lg:text-base xl:text-base antialiased"
-								id={boxParam.box2}
+								id={boxParam.id_2}
 							>
 								Если вы хотите приобрести кухонный гарнитур недорого и с высоким качеством, то
 								предлагаем сделать это у нас. Мы предоставим оптимальное соотношение качества и цены
