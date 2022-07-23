@@ -1,3 +1,7 @@
+<script>
+    export let header
+</script>
+
 <div
         class="mt-16 sm:mt-24 lg:mt-4 lg:col-span-6 sm:transition sm:ease-in-out sm:delay-100 sm:hover:scale-110 sm:duration-500"
 >
@@ -5,7 +9,7 @@
         <div class="px-4 py-8 sm:px-10">
             <div>
                 <p class="text-lg font-bold text-gray-700 text-center">
-                    Экспресс заявка на консультацию
+                    {header}
                 </p>
             </div>
 

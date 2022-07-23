@@ -13,6 +13,7 @@
 	export let text_1
 	export let text_2
 
+	export let contentForm_v1
 
 </script>
 
@@ -112,7 +113,7 @@
 						</div>
 					</div>
 
-<Form_v1/>
+<Form_v1 {...contentForm_v1}/>
 
 				</div>
 			</div>
