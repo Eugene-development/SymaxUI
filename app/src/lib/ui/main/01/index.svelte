@@ -5,6 +5,11 @@
 	onMount(async () => {
 		await gsapTextToRight("id_1", "id_2");
 	});
+
+	export let info
+	export let link
+	export let H1
+
 </script>
 
 <div class="relative bg-gray-800 overflow-hidden">
@@ -39,16 +44,14 @@
 						class="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center"
 					>
 						<div>
-							<a
-								href="/contacts"
+							<div
 								class="inline-flex items-center text-white bg-gray-900 rounded-md p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
 							>
 								<span
 									class="ml-0.5 px-4 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-md"
-									>Мы открыты</span
+									>{info}</span
 								>
-								<span class="ml-4 p-1 text-sm">Посетите наши офисы</span>
-								<!-- Heroicon name: solid/chevron-right -->
+								<a href="/{link.path}" class="ml-4 p-1 text-sm">{link.value}</a>
 								<svg
 									aria-hidden="true"
 									class="ml-2 w-5 h-5 text-gray-500"
@@ -62,16 +65,8 @@
 										fill-rule="evenodd"
 									/>
 								</svg>
-							</a>
-							<h1
-								class="mt-4  tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 text-4xl lg:text-4xl xl:text-5xl antialiased"
-							>
-								<span class="md:block">Шкафы купе и <br /> кухонные гарнитуры</span>
-								<span
-									class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-cyan-400 sm:pb-5"
-									>под заказ <br /> от производителей</span
-								>
-							</h1>
+							</div>
+							{@html H1}
 							<p
 								class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-base lg:text-base xl:text-base antialiased"
 								id="id_1"
@@ -212,6 +207,8 @@
 							</div>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
 		</main>
