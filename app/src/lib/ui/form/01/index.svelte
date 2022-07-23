@@ -49,7 +49,7 @@
                     </div>
 
                     <div>
-                        <label for="mobile-or-email" class="sr-only">Укажите телефон</label>
+                        <label for="phone" class="sr-only">Укажите телефон</label>
                         <input
                                 type="text"
                                 name="phone"
