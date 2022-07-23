@@ -1,6 +1,17 @@
 <script>
+    import {form_01_sent} from "../../../store/stores.js";
+    import { useInvert } from '../../../functions/broker';
+    const { invertToTrue } = useInvert;
+    const sendForm_01 = () => {
+        try {
+            form_01_sent.update(invertToTrue);
+        } catch (error) {
+            console.error(error);
+        }
+    }
     export let header
 </script>
+
 
 <div
         class="mt-16 sm:mt-24 lg:mt-4 lg:col-span-6 sm:transition sm:ease-in-out sm:delay-100 sm:hover:scale-110 sm:duration-500"
@@ -23,7 +34,7 @@
             </div>
 
             <div class="mt-6">
-                <form action="#" method="POST" class="space-y-6">
+                <form on:submit|preventDefault|once={sendForm_01} class="space-y-6">
                     <div>
                         <label for="name" class="sr-only">Имя</label>
                         <input
@@ -41,8 +52,8 @@
                         <label for="mobile-or-email" class="sr-only">Укажите телефон</label>
                         <input
                                 type="text"
-                                name="mobile-or-email"
-                                id="mobile-or-email"
+                                name="phone"
+                                id="phone"
                                 autocomplete="phone"
                                 placeholder="Укажите телефон"
                                 required
@@ -51,12 +62,12 @@
                     </div>
 
                     <div>
-                        <label for="object" class="sr-only">Адрес объекта</label>
+                        <label for="address" class="sr-only">Адрес объекта</label>
                         <input
                                 type="text"
-                                name="password"
-                                id="object"
-                                autocomplete="object"
+                                name="address"
+                                id="address"
+                                autocomplete="address"
                                 placeholder="Адрес объекта"
                                 required
                                 class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
@@ -67,7 +78,7 @@
                         <label for="time" class="sr-only">Удобное время</label>
                         <input
                                 type="text"
-                                name="password"
+                                name="time"
                                 id="time"
                                 autocomplete="time"
                                 placeholder="Удобное время"
@@ -77,11 +88,18 @@
                     </div>
 
                     <div>
+                        {#if $form_01_sent}
+                        <span
+                                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
+                        >Отправлено</span
+                        >
+                        {:else }
                         <button
                                 type="submit"
                                 class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
                         >Отправить</button
                         >
+                        {/if}
                     </div>
                     <!--                                        <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">-->
                     <!--                                            Save Changes-->

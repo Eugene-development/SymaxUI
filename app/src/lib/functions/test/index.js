@@ -1,5 +1,5 @@
 const testFunction = (value) => console.log(value);
 
-export const useFunc = {
+export const useTestFunc = {
 	testFunction
 };
