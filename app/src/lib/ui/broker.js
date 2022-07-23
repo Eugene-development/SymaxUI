@@ -15,3 +15,5 @@ export { default as Marketing_v2 } from './marketing/02/index.svelte';
 export { default as Blog_v1 } from './blog/01/index.svelte';
 
 export { default as Article_v1 } from './article/01/index.svelte';
+
+export { default as Form_v1 } from './form/01/index.svelte';
