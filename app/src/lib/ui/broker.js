@@ -2,6 +2,7 @@ export { default as Mobile_Menu_v1 } from './mobile_menu/01/index.svelte';
 
 export { default as Header_v1 } from './header/01/index.svelte';
 export { default as Header_v2 } from './header/02/index.svelte';
+export { default as Header_v3 } from './header/03/index.svelte';
 
 export { default as Main_v1 } from './main/01/index.svelte';
 
