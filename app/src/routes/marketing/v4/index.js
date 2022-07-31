@@ -3,7 +3,7 @@ const mainText = {
     descriptionCategory: 'Шкафы купе на заказ по доступным ценам'
 };
 
-const dataMarketingSectionV7 = [
+const dataProduct = [
     {
         name: 'Дзержинск',
         text: 'mf;dv,,vlpew',
@@ -38,12 +38,8 @@ const dataMarketingSectionV7 = [
 
 const content_Marketing_v3 = {
     mainText,
-    dataMarketingSectionV7
+    dataProduct
 };
-
-
-const dataModalSectionV1 = []
-
 
 export const get = () => {
     return {
