@@ -1,20 +1,13 @@
 <script>
-    // import {image, currentImage} from "../../../../../stores.js";
+    import {image, currentImage} from "../../../store/stores.js";
     import {useInvert} from "../../../functions/invert/index.js";
-
     const { invertToTrue } = useInvert;
-
-
-    // const visibleImg = async (img) => {
-    //     await currentImage.update(() => img)
-    //     await image.update(invertToTrue)
-    // }
-
-
+    const visibleImg = async (img) => {
+        await currentImage.update(() => img)
+        await image.update(invertToTrue)
+    }
     export let mainText;
     export let dataProduct;
-
-
 </script>
 
 
@@ -27,8 +20,7 @@
             </div>
             <div class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
                 {#each dataProduct as {name, text, img, alt}}
-                    <div class="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left" >
-<!--                    <div class="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left" on:click|preventDefault={visibleImg(img)}>-->
+                    <div class="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left" on:click|preventDefault={visibleImg(img)}>
                         <div class="space-y-6 xl:space-y-10">
                             <img class="mx-auto w-80 h-56 rounded-md xl:w-96 xl:h-56" src="{img}" alt="{alt}">
                             <div class="space-y-2 xl:flex xl:items-center xl:justify-between">
