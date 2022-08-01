@@ -15,6 +15,11 @@ const config = {
 		alias: {
 			$store: 'src/lib/store',
 			$functions: 'src/lib/functions'
+		},
+		vite: {
+			ssr:{
+				noExternal: ['chart.js']
+			}
 		}
 	}
 };
