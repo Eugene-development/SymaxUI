@@ -77,6 +77,6 @@
 <main class="main-container">
     <h1>State of JS 2021 Backend Framework Satisfaction</h1>
     <section>
-        <canvas bind:this={barChartElement} />
+        <canvas bind:this={barChartElement}></canvas>
     </section>
 </main>
