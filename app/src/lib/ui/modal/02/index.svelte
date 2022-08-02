@@ -29,6 +29,11 @@
 			console.error(error);
 		}
 	}
+
+	export let avatar
+	export let nameManager
+	export let logo
+	export let slogan
 </script>
 
 {#if $formConsultation}
@@ -92,11 +97,11 @@
 			<div class=" h-full  flex-none flex-col divide-y divide-gray-100 overflow-y-auto sm:flex">
 				<div class="flex-none p-6 text-center">
 					<img
-						src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80"
+						src="{avatar}"
 						alt=""
 						class="mx-auto h-16 w-16 rounded-full"
 					/>
-					<h2 class="mt-3 font-semibold text-gray-900">Татьяна Демидова</h2>
+					<h2 class="mt-3 font-semibold text-gray-900">{nameManager}</h2>
 					<p class="text-sm leading-6 text-gray-500">Ваш персональный менеджер</p>
 				</div>
 				<form
@@ -185,10 +190,10 @@
 				<!-- Heroicon name: outline/users -->
 				<img
 					class="h-16 w-auto mx-auto"
-					src="https://storage.yandexcloud.net/brand-logo/mos-mebel/5.png"
+					src="{logo}"
 					alt="logo"
 				/>
-				<p class="mt-2 text-gray-50">Шкафы купе и кухонные гарнитуры на заказ</p>
+				<p class="mt-2 text-gray-50">{slogan}</p>
 			</div>
 		</div>
 	</div>
