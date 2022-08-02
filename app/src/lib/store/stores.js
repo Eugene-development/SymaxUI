@@ -5,7 +5,7 @@ export const visibleBanner_01 = writable(true);
 
 export const form_01_sent = writable(false);
 
-export const formConsultation = writable(true);
+export const formConsultation = writable(false);
 
 export const image = writable(false);
 export const currentImage = writable(

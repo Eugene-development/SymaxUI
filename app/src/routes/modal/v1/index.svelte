@@ -1,12 +1,10 @@
 <script>
 	import { Modal_v1 } from '../../../lib/ui/broker.js';
-	// import {onMount} from 'svelte';
-	//  import {image} from "../../../lib/store/stores.js";
-	//  import {useInvert} from "../../../lib/functions/invert/index.js";
-	//  const { invertToTrue } = useInvert;
-	//  onMount(async () => {
-	//       () => image.update(invertToTrue);
-	//   });
+    import {image} from "../../../lib/store/stores.js";
+    import {useInvert} from "../../../lib/functions/invert/index.js";
+    const { invertToTrue } = useInvert;
+	const showModal = () => image.update(invertToTrue);
 </script>
 
+<button on:click={showModal}>Показать</button>
 <Modal_v1 />
