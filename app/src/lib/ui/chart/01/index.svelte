@@ -31,7 +31,7 @@
                 ],
                 borderColor: ['hsl(43 100% 52%)'],
                 borderRadius: 8,
-                borderWidth: 2,
+                borderWidth: 1,
             },
         ],
     };
