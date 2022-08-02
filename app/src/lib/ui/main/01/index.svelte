@@ -1,20 +1,19 @@
 <script>
-	import {Form_v1} from "../../broker.js";
+	import { Form_v1 } from '../../broker.js';
 	import { onMount } from 'svelte';
 	import { useGSAP } from '../../../functions/gsap/index.js';
 	const { gsapTextToRight } = useGSAP;
 	onMount(async () => {
-		await gsapTextToRight("id_1", "id_2");
+		await gsapTextToRight('id_1', 'id_2');
 	});
 
-	export let info
-	export let link
-	export let H1
-	export let text_1
-	export let text_2
+	export let info;
+	export let link;
+	export let H1;
+	export let text_1;
+	export let text_2;
 
-	export let contentForm_v1
-
+	export let contentForm_v1;
 </script>
 
 <div class="relative bg-gray-800 overflow-hidden">
@@ -84,7 +83,7 @@
 							>
 								{text_2}
 							</p>
-<!--														<p class="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">Наши партнёры</p>-->
+							<!--														<p class="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">Наши партнёры</p>-->
 							<div class="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
 								<div class="flex flex-wrap items-start justify-between">
 									<div class="flex justify-center px-1">
@@ -113,8 +112,7 @@
 						</div>
 					</div>
 
-<Form_v1 {...contentForm_v1}/>
-
+					<Form_v1 {...contentForm_v1} />
 				</div>
 			</div>
 		</main>

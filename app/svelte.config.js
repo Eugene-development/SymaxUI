@@ -17,7 +17,7 @@ const config = {
 			$functions: 'src/lib/functions'
 		},
 		vite: {
-			ssr:{
+			ssr: {
 				noExternal: ['chart.js']
 			}
 		}

@@ -1,5 +1,5 @@
 <script>
-    import {Form_v2} from "../../../lib/ui/broker.js";
+	import { Form_v2 } from '../../../lib/ui/broker.js';
 </script>
 
-<Form_v2/>
+<Form_v2 />

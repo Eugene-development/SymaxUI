@@ -1,17 +1,17 @@
 {
-  "data_component": [
-    { "framework": "SvelteKit", "score": 16 },
-    { "framework": "Astro", "score": 91 },
-    { "framework": "Fastify", "score": 91 },
-    { "framework": "Next.js", "score": 91 },
-    { "framework": "Remix", "score": 91 },
-    { "framework": "Express", "score": 88 },
-    { "framework": "Nest", "score": 85 },
-    { "framework": "Eleventy", "score": 82 },
-    { "framework": "Nuxt", "score": 82 },
-    { "framework": "Strapi", "score": 76 },
-    { "framework": "Blitz", "score": 67 },
-    { "framework": "Redwood", "score": 67 },
-    { "framework": "Gatsby", "score": 96 }
-  ]
+	"data_component": [
+		{ "framework": "SvelteKit", "score": 16 },
+		{ "framework": "Astro", "score": 91 },
+		{ "framework": "Fastify", "score": 91 },
+		{ "framework": "Next.js", "score": 91 },
+		{ "framework": "Remix", "score": 91 },
+		{ "framework": "Express", "score": 88 },
+		{ "framework": "Nest", "score": 85 },
+		{ "framework": "Eleventy", "score": 82 },
+		{ "framework": "Nuxt", "score": 82 },
+		{ "framework": "Strapi", "score": 76 },
+		{ "framework": "Blitz", "score": 67 },
+		{ "framework": "Redwood", "score": 67 },
+		{ "framework": "Gatsby", "score": 96 }
+	]
 }
