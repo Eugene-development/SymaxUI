@@ -18,7 +18,7 @@
         spaceBetween={40}
         slidesPerView={1}
         navigation
-        autoplay={{delay:5000}}
+        autoplay={{delay:2000}}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true, hide: true }}
         on:slideChange={() => console.log('slide change')}

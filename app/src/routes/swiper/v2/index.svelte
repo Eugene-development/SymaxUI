@@ -1,6 +1,6 @@
 <script>
     import { Swiper, SwiperSlide } from 'swiper/svelte';
-    import { EffectFade, autoplay } from 'swiper';
+    import { EffectFade } from 'swiper';
 
     import 'swiper/css';
     import 'swiper/css/effect-fade';

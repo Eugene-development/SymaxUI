@@ -16,6 +16,7 @@ export { default as Marketing_v3 } from './marketing/03/index.svelte';
 export { default as Marketing_v4 } from './marketing/04/index.svelte';
 
 export { default as Modal_v1 } from './modal/01/index.svelte';
+export { default as Modal_v2 } from './modal/02/index.svelte';
 
 export { default as Blog_v1 } from './blog/01/index.svelte';
 
