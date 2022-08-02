@@ -1,6 +1,6 @@
 {
-  "FY2021": [
-    { "framework": "SvelteKit", "score": 96 },
+  "data_component": [
+    { "framework": "SvelteKit", "score": 16 },
     { "framework": "Astro", "score": 91 },
     { "framework": "Fastify", "score": 91 },
     { "framework": "Next.js", "score": 91 },
@@ -12,6 +12,6 @@
     { "framework": "Strapi", "score": 76 },
     { "framework": "Blitz", "score": 67 },
     { "framework": "Redwood", "score": 67 },
-    { "framework": "Gatsby", "score": 51 }
+    { "framework": "Gatsby", "score": 96 }
   ]
 }

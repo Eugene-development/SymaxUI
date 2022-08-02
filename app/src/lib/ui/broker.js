@@ -25,3 +25,5 @@ export { default as Form_v1 } from './form/01/index.svelte';
 export { default as Form_v2 } from './form/02/index.svelte';
 
 export { default as Contact_v1 } from './contact/01/index.svelte';
+
+export { default as Chart_v1 } from './chart/01/index.svelte';
