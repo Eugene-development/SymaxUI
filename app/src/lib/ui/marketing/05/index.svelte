@@ -4,6 +4,7 @@
     export let img_Marketing_v5;
 </script>
 
+
 <div class="relative py-16 bg-white">
     <div class="hidden absolute top-0 inset-x-0 h-1/2 bg-gray-50 lg:block" aria-hidden="true"></div>
     <div class="max-w-7xl mx-auto bg-slate-800 lg:bg-transparent lg:px-8">
