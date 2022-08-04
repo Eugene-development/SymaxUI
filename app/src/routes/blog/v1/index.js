@@ -1,8 +1,8 @@
-const title = 'Lorem ipsum dolor sit amet';
-const description =
+const title_Blog_v1 = 'Lorem ipsum dolor sit amet';
+const description_Blog_v1 =
 	'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, provident saepe. Alias error inventore magni optio quaerat quasi repellendus temporibus!';
 
-const posts = [
+const posts_Blog_v1 = [
 	{
 		id: '#',
 		img: 'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV1/kitchen.jpeg',
@@ -42,9 +42,9 @@ const posts = [
 ];
 
 const contentBlog_v1 = {
-	title,
-	description,
-	posts
+	title_Blog_v1,
+	description_Blog_v1,
+	posts_Blog_v1
 };
 
 export const get = () => {

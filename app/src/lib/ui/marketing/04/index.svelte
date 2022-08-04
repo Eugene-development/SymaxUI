@@ -10,19 +10,19 @@
 	export let dataProduct;
 </script>
 
-<div class="bg-gray-900">
-	<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+<div class="bg-gradient-to-b from-white to-gray-100">
+	<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-16 ">
 		<div class="space-y-12">
 			<div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-				<h2 class="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
+				<h2 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
 					{mainText.titleCategory}
 				</h2>
-				<p class="text-xl text-gray-300">{mainText.descriptionCategory}</p>
+				<p class="text-xl text-gray-900">{mainText.descriptionCategory}</p>
 			</div>
 			<div class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
 				{#each dataProduct as { name, text, img, alt }}
 					<div
-						class="py-10 px-6 bg-gray-800 text-center rounded-lg xl:px-10 xl:text-left"
+						class="py-10 px-6 bg-gray-700 text-center rounded-lg xl:px-10 xl:text-left shadow-2xl"
 						on:click|preventDefault={visibleImg(img)}
 					>
 						<div class="space-y-6 xl:space-y-10">
