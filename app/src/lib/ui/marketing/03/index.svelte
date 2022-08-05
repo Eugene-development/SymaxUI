@@ -35,7 +35,7 @@
 		</div>
 		<div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-4 lg:gap-6">
 			{#each img as { path, alt }}
-				<img class="bg-gray-100 rounded-lg h-52 w-auto" src={path} {alt} />
+				<img class="bg-gray-100 rounded-lg h-52 w-auto" src={path} alt="{alt}" />
 			{/each}
 		</div>
 	</div>
