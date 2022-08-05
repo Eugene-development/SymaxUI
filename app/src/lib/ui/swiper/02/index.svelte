@@ -1,6 +1,6 @@
 <script>
-    import { Marketing_v5 } from "../../broker.js";
-    export let content_Swiper_v1;
+    import { Marketing_v2 } from "../../broker.js";
+    export let content_Swiper_v2;
 
     // import Swiper core and required modules
     import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
@@ -24,10 +24,11 @@
         scrollbar={{ draggable: true, hide: true }}
         on:slideChange={() => console.log('slide change')}
         on:swiper={(e) => console.log(e.detail[0])}
+
 >
-    {#each content_Swiper_v1 as {title_Marketing_v5, text_Marketing_v5, img_Marketing_v5}}
-      <SwiperSlide>
-          <Marketing_v5 {title_Marketing_v5} {text_Marketing_v5} {img_Marketing_v5} />
-      </SwiperSlide>
+    {#each content_Swiper_v2 as {title_Marketing_v2, description_Marketing_v2, img_Marketing_v2, alt_Marketing_v2, link_Marketing_v2}}
+        <SwiperSlide>
+            <Marketing_v2 {title_Marketing_v2} {description_Marketing_v2} {img_Marketing_v2} {alt_Marketing_v2} {link_Marketing_v2}/>
+        </SwiperSlide>
     {/each}
 </Swiper>
