@@ -19,7 +19,6 @@
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={40}
         slidesPerView={1}
-        navigation
         autoplay={{ delay: 4000 }}
         scrollbar={{ draggable: true, hide: true }}
         on:slideChange={() => console.log('slide change')}

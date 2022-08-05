@@ -6,8 +6,12 @@
 	export let alt_Marketing_v2;
 </script>
 
+
+
+
+
 <div class="bg-white">
-	<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-full h-fit mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
 			<div class="pt-10 pb-12 px-3 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0 xl:py-20 xl:px-10">
 				<div class="lg:self-center">
@@ -20,7 +24,7 @@
 					<p class="mt-4 text-lg leading-6 text-sky-100">{description_Marketing_v2}</p>
 					<a
 						href="/{link_Marketing_v2}"
-						class="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-slate-800 hover:bg-indigo-50"
+						class="my-16  bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-slate-800 hover:bg-indigo-50"
 						>Подробнее</a
 					>
 				</div>
