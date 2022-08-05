@@ -26,7 +26,7 @@
 						on:click|preventDefault={visibleImg(img)}
 					>
 						<div class="space-y-6 xl:space-y-10">
-							<img class="mx-auto w-80 h-56 rounded-md xl:w-96 xl:h-56" src={img} {alt} />
+							<img class="mx-auto w-80 h-56 rounded-md xl:w-96 xl:h-56" src={img} alt="{alt}" />
 							<div class="space-y-2 xl:flex xl:items-center xl:justify-between">
 								<div class="font-medium text-lg leading-6 space-y-1 divide-y divide-green-300">
 									<h3 class="py-1 text-white text-2xl">{name}</h3>
