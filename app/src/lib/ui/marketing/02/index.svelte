@@ -29,7 +29,7 @@
 				<img
 					class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
 					src={img_Marketing_v2}
-					alt="{alt_Marketing_v2}"
+					alt={alt_Marketing_v2}
 				/>
 			</div>
 		</div>

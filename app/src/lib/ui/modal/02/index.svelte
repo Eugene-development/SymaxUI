@@ -30,10 +30,10 @@
 		}
 	}
 
-	export let avatar
-	export let nameManager
-	export let logo
-	export let slogan
+	export let avatar;
+	export let nameManager;
+	export let logo;
+	export let slogan;
 </script>
 
 {#if $formConsultation}
@@ -53,7 +53,7 @@
             From: "opacity-100"
             To: "opacity-0"
         -->
-		<div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" aria-hidden="true"></div>
+		<div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" aria-hidden="true" />
 
 		<!--
           Command palette, show/hide based on modal state.
@@ -96,11 +96,7 @@
 
 			<div class=" h-full  flex-none flex-col divide-y divide-gray-100 overflow-y-auto sm:flex">
 				<div class="flex-none p-6 text-center">
-					<img
-						src="{avatar}"
-						alt=""
-						class="mx-auto h-16 w-16 rounded-full"
-					/>
+					<img src={avatar} alt="" class="mx-auto h-16 w-16 rounded-full" />
 					<h2 class="mt-3 font-semibold text-gray-900">{nameManager}</h2>
 					<p class="text-sm leading-6 text-gray-500">Ваш персональный менеджер</p>
 				</div>
@@ -188,11 +184,7 @@
 			<!-- Empty state, show/hide based on command palette state -->
 			<div class="py-8 px-6 text-center text-sm sm:px-14 bg-black border-amber-50">
 				<!-- Heroicon name: outline/users -->
-				<img
-					class="h-16 w-auto mx-auto"
-					src="{logo}"
-					alt="logo"
-				/>
+				<img class="h-16 w-auto mx-auto" src={logo} alt="logo" />
 				<p class="mt-2 text-gray-50">{slogan}</p>
 			</div>
 		</div>
