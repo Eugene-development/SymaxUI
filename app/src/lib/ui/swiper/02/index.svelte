@@ -19,7 +19,7 @@
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={40}
         slidesPerView={1}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 5000 }}
         scrollbar={{ draggable: true, hide: true }}
         on:slideChange={() => console.log('slide change')}
         on:swiper={(e) => console.log(e.detail[0])}
