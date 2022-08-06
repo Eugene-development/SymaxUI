@@ -23,11 +23,10 @@
         scrollbar={{ draggable: true, hide: true }}
         on:slideChange={() => console.log('slide change')}
         on:swiper={(e) => console.log(e.detail[0])}
-
 >
-    {#each content_Swiper_v2 as {title_Marketing_v2, description_Marketing_v2, img_Marketing_v2, alt_Marketing_v2, link_Marketing_v2}}
+    {#each content_Swiper_v2 as {...content_Swiper_v2}}
         <SwiperSlide>
-            <Marketing_v2 {title_Marketing_v2} {description_Marketing_v2} {img_Marketing_v2} {alt_Marketing_v2} {link_Marketing_v2}/>
+            <Marketing_v2 {...content_Swiper_v2}/>
         </SwiperSlide>
     {/each}
 </Swiper>

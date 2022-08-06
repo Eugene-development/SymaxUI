@@ -6,12 +6,19 @@
 	export let alt_Marketing_v2;
 </script>
 
-
-
+<h1>
+	<span class="mt-10 block text-center text-base font-semibold uppercase tracking-wide text-red-800"
+				>Акции</span
+				>
+	<span
+			class="mt-2 block text-center text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+	>Лучшие предложения</span
+	>
+</h1>
 
 
 <div class="bg-white">
-	<div class="max-w-full h-fit mx-auto py-16 px-4 sm:px-6 lg:px-8">
+	<div class="max-w-full mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="bg-gray-800 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
 			<div class="pt-10 pb-12 px-3 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0 xl:py-20 xl:px-10">
 				<div class="lg:self-center">
@@ -23,7 +30,7 @@
 					</h2>
 					<p class="mt-4 text-lg leading-6 text-sky-100">{description_Marketing_v2}</p>
 					<a
-						href="/{link_Marketing_v2}"
+						href="{link_Marketing_v2}"
 						class="my-16  bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-slate-800 hover:bg-indigo-50"
 						>Подробнее</a
 					>
