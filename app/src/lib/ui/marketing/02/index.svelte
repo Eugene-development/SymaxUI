@@ -23,16 +23,15 @@
 			<div class="pt-10 pb-12 px-3 sm:pt-16 sm:px-8 lg:py-16 lg:pr-0 xl:py-20 xl:px-10">
 				<div class="lg:self-center">
 					<h2
-						class=" mx-auto text-4xl tracking-tight font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-200 via-sky-200 to-blue-200 "
+						class="mx-auto text-4xl tracking-tight font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-100 via-gray-200 to-blue-100 "
 					>
 						<span class="block">{title_Marketing_v2}</span>
-						<!--                        <span class="block">Мы готовы к партнёрству!</span>-->
 					</h2>
-					<p class="mt-4 text-lg leading-6 text-sky-100">{description_Marketing_v2}</p>
+					<p class="mt-4 mb-24 text-lg leading-6 text-sky-100">{description_Marketing_v2}</p>
 					<a
 						href="{link_Marketing_v2}"
-						class="my-16  bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-slate-800 hover:bg-indigo-50"
-						>Подробнее</a
+						class=" bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-slate-800 hover:bg-indigo-50"
+						>Приобрести товар</a
 					>
 				</div>
 			</div>
