@@ -27,7 +27,7 @@
 						<div class="items-center">
 							<div class="flex items-center justify-between">
 								<div
-									class="flex space-x-1 bg-gray-700 hover:bg-gray-600 p-1 mx-1 rounded-md items-center antialiased"
+									class="flex space-x-1 bg-gray-700 hover:bg-gray-600 px-2 py-1 mx-1 rounded-md items-center antialiased"
 								>
 									<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 									<svg
@@ -49,7 +49,7 @@
 									>
 								</div>
 								<div
-									class="flex space-x-1 bg-gray-700 hover:bg-gray-600 p-1 mx-1 rounded-md items-center antialiased"
+									class="flex space-x-1 bg-gray-700 hover:bg-gray-600 px-2 py-1 mx-1 rounded-md items-center antialiased"
 								>
 									<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 									<svg
