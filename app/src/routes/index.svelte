@@ -3,6 +3,8 @@
 
 <a href="/article/v1">article/v1</a>
 <br />
+<a href="/article/v2">article/v2</a>
+<br />
 ---
 <br />
 <a href="/banner/v1">banner/v1</a>
