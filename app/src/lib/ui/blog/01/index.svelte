@@ -17,7 +17,7 @@
 		</div>
 		<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
 			{#each posts_Blog_v1 as { id, img, alt, title, description, avatar, author, date }}
-				<a href="/post/{id}" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+				<a href="/blog/post/{id}" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
 					<div class="flex-shrink-0">
 						<img class="h-64 w-full object-cover" src={img} alt="" />
 					</div>

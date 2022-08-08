@@ -1,4 +1,9 @@
 <script>
+	import { formConsultation } from '../../../store/stores.js';
+	import { useInvert } from '../../../functions/invert/index.js';
+	const { invert } = useInvert;
+	const changeVisibleFormConsultation = () => formConsultation.update(invert);
+
 	export let title_Marketing_v5;
 	export let text_Marketing_v5;
 	export let img_Marketing_v5;
@@ -80,9 +85,10 @@
 				>
 					<h2 class="text-5xl font-extrabold text-white" id="join-heading">{title_Marketing_v5}</h2>
 					<p class="text-lg text-white">{text_Marketing_v5}</p>
-					<a
+					<button on:click|preventDefault={changeVisibleFormConsultation}
+							type="button"
 						class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-cyan-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
-						href="#">Оформить заявку на замер</a
+						>Оформить заявку на замер</button
 					>
 				</div>
 			</div>

@@ -13,11 +13,14 @@
 	let address = '';
 	let time = '';
 
+	export let apiMail
+	export let apiToken
+
 	const url = `/sendConsultation`;
 	const apiData = {
-		baseURL: `${import.meta.env.VITE_API_MAIL}`,
+		baseURL: `${apiMail}`,
 		headers: {
-			Authorization: `Bearer ${import.meta.env.VITE_TOKEN}`
+			Authorization: `Bearer ${apiToken}`
 		}
 	};
 	async function sendConsultation() {
@@ -34,6 +37,7 @@
 	export let nameManager;
 	export let logo;
 	export let slogan;
+
 </script>
 
 {#if $formConsultation}
@@ -53,7 +57,7 @@
             From: "opacity-100"
             To: "opacity-0"
         -->
-		<div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" aria-hidden="true" />
+		<div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity" aria-hidden="true"></div>
 
 		<!--
           Command palette, show/hide based on modal state.

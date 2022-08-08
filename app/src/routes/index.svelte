@@ -1,6 +1,8 @@
 <script>
+    const test_env = import.meta.env.VITE_API_MAIL
+    console.log(test_env)
 </script>
-
+{test_env}
 <a href="/article/v1">article/v1</a>
 <br />
 <a href="/article/v2">article/v2</a>
@@ -35,6 +37,12 @@
 <br />
 ---
 <br />
+<a href="/modal/v1">modal/v1</a>
+<br />
+<a href="/modal/v2">modal/v2</a>
+<br />
+---
+<br />
 <a href="/marketing/v1">marketing/v1</a>
 <br />
 <a href="/marketing/v2">marketing/v2</a>
@@ -42,6 +50,8 @@
 <a href="/marketing/v3">marketing/v3</a>
 <br />
 <a href="/marketing/v4">marketing/v4</a>
+<br />
+<a href="/marketing/v5">marketing/v5</a>
 <br />
 ---
 <br />

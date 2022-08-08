@@ -1,4 +1,5 @@
 const phone = '+7 (495) 147-55-50';
+const linkPhone = '+7495147-55-50';
 const email = 'info@mos-mebel.org';
 
 const menu = [
