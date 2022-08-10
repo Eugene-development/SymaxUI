@@ -16,9 +16,17 @@ const text_1 =
 const text_2 =
 	'Если вы хотите приобрести кухонный гарнитур недорого и с высоким качеством, то предлагаем сделать это у нас. Мы предоставим оптимальное соотношение качества и цены на кухонные гарнитуры вне зависимости от ценовой категории.';
 
+
+
+
+const apiMail = import.meta.env.VITE_API_MAIL
+const apiToken = import.meta.env.VITE_TOKEN
+
 const header = 'Экспресс заявка на замер';
 
 const contentForm_v1 = {
+	apiMail,
+	apiToken,
 	header
 };
 

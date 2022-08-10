@@ -1,6 +1,42 @@
 <script>
 	import { form_01_sent } from '../../../store/stores.js';
 	import { useInvert } from '../../../functions/broker';
+	import axios from "axios";
+
+
+
+	let name = '';
+	let phone = '';
+	let address = '';
+	let time = '';
+
+
+	export let apiMail
+	export let apiToken
+
+	const url = `/sendConsultation`;
+	const apiData = {
+		baseURL: `${apiMail}`,
+		headers: {
+			Authorization: `Bearer ${apiToken}`
+		}
+	};
+	async function sendConsultation() {
+		try {
+			const payload = { name, phone, address, time };
+			await axios.post(url, payload, apiData);
+			sendForm_01();
+		} catch (error) {
+			console.error(error);
+		}
+	}
+
+
+
+
+
+
+
 	const { invertToTrue } = useInvert;
 	const sendForm_01 = () => {
 		try {
@@ -33,10 +69,11 @@
 			</div>
 
 			<div class="mt-6">
-				<form on:submit|preventDefault|once={sendForm_01} class="space-y-6">
+				<form on:submit|preventDefault|once={sendConsultation} class="space-y-6">
 					<div>
 						<label for="name" class="sr-only">Имя</label>
 						<input
+								bind:value={name}
 							type="text"
 							name="name"
 							id="name"
@@ -50,6 +87,7 @@
 					<div>
 						<label for="phone" class="sr-only">Укажите телефон</label>
 						<input
+								bind:value={phone}
 							type="text"
 							name="phone"
 							id="phone"
@@ -63,6 +101,7 @@
 					<div>
 						<label for="address" class="sr-only">Адрес объекта</label>
 						<input
+								bind:value={address}
 							type="text"
 							name="address"
 							id="address"
@@ -76,6 +115,7 @@
 					<div>
 						<label for="time" class="sr-only">Удобное время</label>
 						<input
+								bind:value={time}
 							type="text"
 							name="time"
 							id="time"
