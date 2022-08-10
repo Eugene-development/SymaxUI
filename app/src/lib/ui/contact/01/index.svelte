@@ -1,17 +1,11 @@
 <script>
 	import { Form_v2 } from '../../broker.js';
 
-	const title = 'Контакты с компанией МосМебель';
-	const description = 'Связаться с нами достаточно легко по почте, чату или просто позвонив';
-
+	export let address;
 	export let phones;
 	export let emails;
 </script>
 
-<svelte:head>
-	<title>{title}</title>
-	<meta name="description" content={description} />
-</svelte:head>
 
 <div class="bg-slate-100">
 	<div class="w-full mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -118,7 +112,7 @@
 						</svg>
 					</div>
 					<h3 class="text-xl font-medium text-white">Контактная информация:</h3>
-					<p class="mt-6 text-base text-cyan-50 max-w-3xl">Москва и Московская область</p>
+					<p class="mt-6 text-base text-cyan-50 max-w-3xl">{address}</p>
 					<dl class="mt-8 space-y-6">
 						<dt><span class="sr-only">Телефон</span></dt>
 						{#each phones as { phone, name }}

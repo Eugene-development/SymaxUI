@@ -28,6 +28,7 @@ const menu = [
 const content_Header_v1 = {
 	menu,
 	phone,
+	linkPhone,
 	email
 };
 

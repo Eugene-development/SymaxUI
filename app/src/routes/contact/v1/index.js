@@ -1,3 +1,4 @@
+const address = 'Тестовый адрес'
 const phones = [
 	{
 		phone: '8 (495) 147-55-50',
@@ -6,11 +7,12 @@ const phones = [
 ];
 const emails = [
 	{
-		email: 'info@mos-mebel.org'
+		email: 'info@mysite.com'
 	}
 ];
 
 const content_Contact_v1 = {
+	address,
 	phones,
 	emails
 };
