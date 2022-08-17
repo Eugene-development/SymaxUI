@@ -4,6 +4,7 @@
 	export let address;
 	export let phones;
 	export let emails;
+	export let contentForm_v2;
 </script>
 
 
@@ -173,7 +174,7 @@
 				</div>
 
 				<!-- Contact form -->
-				<Form_v2 />
+				<Form_v2 {...contentForm_v2}/>
 			</div>
 		</div>
 	</div>

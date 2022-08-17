@@ -1,8 +1,5 @@
 <script>
-    const test_env = import.meta.env.VITE_API_MAIL
-    console.log(test_env)
 </script>
-{test_env}
 <a href="/article/v1">article/v1</a>
 <br />
 <a href="/article/v2">article/v2</a>

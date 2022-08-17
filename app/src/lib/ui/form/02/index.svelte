@@ -1,28 +1,74 @@
+<script>
+	import { form_02_sent } from '../../../store/stores.js';
+	import { useInvert } from '../../../functions/broker';
+	import axios from "axios";
+
+	let name = '';
+	let position = '';
+	let email = '';
+	let phone = '';
+	let comment = '';
+
+
+	export let apiMail
+	export let apiToken
+	export let header
+
+	const url = `/sendOffer`;
+	const apiData = {
+		baseURL: `${apiMail}`,
+		headers: {
+			Authorization: `Bearer ${apiToken}`
+		}
+	};
+	async function sendOffer() {
+		try {
+			const payload = { name, position, email, phone, comment };
+			await axios.post(url, payload, apiData);
+			sendForm_02();
+		} catch (error) {
+			console.error(error);
+		}
+	}
+	const { invertToTrue } = useInvert;
+	const sendForm_02 = () => {
+		try {
+			form_02_sent.update(invertToTrue);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+</script>
+
 <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
 	<h3 class="text-lg font-medium text-gray-900 border-b pb-2">
-		Отправить запрос или коммерческое предложение:
+		{header}
 	</h3>
-	<form action="#" method="POST" class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+	<form on:submit|preventDefault|once={sendOffer} class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
 		<div>
-			<label for="first_name" class="block text-sm font-medium text-gray-900">Имя</label>
+			<label for="name" class="block text-sm font-medium text-gray-900">Имя</label>
 			<div class="mt-1">
 				<input
+						bind:value={name}
 					type="text"
-					name="first_name"
-					id="first_name"
-					autocomplete="given-name"
+					name="name"
+					id="name"
+					autocomplete="name"
+						required
 					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
 				/>
 			</div>
 		</div>
 		<div>
-			<label for="last_name" class="block text-sm font-medium text-gray-900">Должность</label>
+			<label for="position" class="block text-sm font-medium text-gray-900">Должность</label>
 			<div class="mt-1">
 				<input
+						bind:value={position}
 					type="text"
-					name="last_name"
-					id="last_name"
-					autocomplete="family-name"
+					name="position"
+					id="position"
+						required
+					autocomplete="position"
 					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
 				/>
 			</div>
@@ -31,7 +77,9 @@
 			<label for="email" class="block text-sm font-medium text-gray-900">Почта</label>
 			<div class="mt-1">
 				<input
+						bind:value={email}
 					id="email"
+						required
 					name="email"
 					type="email"
 					autocomplete="email"
@@ -45,9 +93,11 @@
 			</div>
 			<div class="mt-1">
 				<input
+						bind:value={phone}
 					type="text"
 					name="phone"
 					id="phone"
+						required
 					autocomplete="tel"
 					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
 					aria-describedby="phone-optional"
@@ -56,17 +106,18 @@
 		</div>
 		<div class="sm:col-span-2">
 			<div class="flex justify-between">
-				<label for="message" class="block text-sm font-medium text-gray-900">Комментарий</label>
-				<span id="message-max" class="text-sm text-gray-500">Максимум 500 символов</span>
+				<label for="comment" class="block text-sm font-medium text-gray-900">Комментарий</label>
+				<span id="comment-max" class="text-sm text-gray-500">Максимум 500 символов</span>
 			</div>
 			<div class="mt-1">
 				<textarea
-					id="message"
-					name="message"
+						bind:value={comment}
+					id="comment"
+						required
+					name="comment"
 					rows="4"
 					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border border-gray-300 rounded-md"
-					aria-describedby="message-max"
-				/>
+					aria-describedby="comment-max"></textarea>
 			</div>
 		</div>
 		<!--                        <div class="sm:col-span-2">-->
@@ -94,12 +145,21 @@
 		<!--                        </div>-->
 
 		<div class="sm:col-span-2 sm:flex sm:justify-end">
-			<button
-				type="submit"
-				class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-800 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 sm:w-auto"
-			>
-				Отправить
-			</button>
+
+			{#if $form_02_sent}
+				<span
+						class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-800 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 sm:w-auto"
+				>
+					Отправлено
+				</span>
+			{:else }
+				<button
+						type="submit"
+						class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-red-800 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 sm:w-auto"
+				>
+					Отправить
+				</button>
+			{/if}
 		</div>
 	</form>
 </div>
