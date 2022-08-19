@@ -1,6 +1,6 @@
 const title = 'Шкафы в Москве и области';
 const description = 'Шкафы в Москве под ваши размеры. Дизайн проект в подарок.';
-const parentPage = ''
+const parentPage = 'Родительская'
 const parentPageLink = ''
 const currentPage = 'Текущая'
 const pathImg =
