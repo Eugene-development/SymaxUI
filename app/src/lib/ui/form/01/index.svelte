@@ -9,6 +9,9 @@
 	let phone = '';
 	let address = '';
 	let time = '';
+	let email = '';
+	let variant = '';
+	let volume = '';
 
 
 	export let apiMail
@@ -47,6 +50,9 @@
 	export let phoneForm;
 	export let addressForm;
 	export let timeForm;
+	export let emailForm;
+	export let variantForm;
+	export let volumeForm;
 </script>
 
 <div
@@ -132,6 +138,52 @@
 							/>
 						</div>
 					{/if}
+
+					{#if (emailForm)}
+					<div>
+						<label for="email" class="sr-only">{emailForm}</label>
+						<input
+								bind:value={email}
+								type="text"
+								name="email"
+								id="email"
+								autocomplete="email"
+								placeholder="{emailForm}"
+								required
+								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+						/>
+					</div>
+						{/if}
+					{#if (variantForm)}
+					<div>
+						<label for="variant" class="sr-only">{variantForm}</label>
+						<input
+								bind:value={variant}
+								type="text"
+								name="variant"
+								id="variant"
+								autocomplete="variant"
+								placeholder="{variantForm}"
+								required
+								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+						/>
+					</div>
+						{/if}
+					{#if (volumeForm)}
+					<div>
+						<label for="volume" class="sr-only">{volumeForm}</label>
+						<input
+								bind:value={volume}
+								type="text"
+								name="volume"
+								id="volume"
+								autocomplete="volume"
+								placeholder="{volumeForm}"
+								required
+								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+						/>
+					</div>
+						{/if}
 
 
 					<div>

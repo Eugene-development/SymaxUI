@@ -25,13 +25,26 @@ const apiToken = import.meta.env.VITE_TOKEN
 const header = 'Экспресс заявка на замер';
 const subheader = 'Это бесплатно'
 const nameForm = 'Введите имя'
+const phoneForm = 'Ваш телефон'
+const addressForm = 'Ваш адрес'
+const timeForm = 'Удобное время'
+const emailForm = 'Ваша почта'
+const variantForm = 'Нужный вариант'
+const volumeForm = 'Необходимый объём'
+
 
 const contentForm_v1 = {
 	apiMail,
 	apiToken,
 	header,
 	subheader,
-	nameForm
+	nameForm,
+	phoneForm,
+	addressForm,
+	timeForm,
+	emailForm,
+	variantForm,
+	volumeForm
 };
 
 const contentMain_v1 = {
