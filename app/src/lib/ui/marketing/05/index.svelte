@@ -4,9 +4,10 @@
 	const { invert } = useInvert;
 	const changeVisibleFormConsultation = () => formConsultation.update(invert);
 
-	export let title_Marketing_v5;
-	export let text_Marketing_v5;
-	export let img_Marketing_v5;
+	export let title;
+	export let text;
+	export let textButton;
+	export let img;
 </script>
 
 <div class="relative py-16 bg-white">
@@ -21,7 +22,7 @@
 					<div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
 						<img
 							class="object-cover object-center rounded-3xl shadow-2xl"
-							src={img_Marketing_v5}
+							src={img}
 							alt=""
 						/>
 					</div>
@@ -83,13 +84,15 @@
 				<div
 					class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 				>
-					<h2 class="text-5xl font-extrabold text-white" id="join-heading">{title_Marketing_v5}</h2>
-					<p class="text-lg text-white">{text_Marketing_v5}</p>
-					<button on:click|preventDefault={changeVisibleFormConsultation}
-							type="button"
-						class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-cyan-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
-						>Оформить заявку на замер</button
-					>
+					<h2 class="text-5xl font-extrabold text-white" id="join-heading">{title}</h2>
+					<p class="text-lg text-white">{text}</p>
+					{#if (textButton)}
+						<button on:click|preventDefault={changeVisibleFormConsultation}
+								type="button"
+							class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-cyan-700 hover:bg-gray-50 sm:inline-block sm:w-auto"
+							>{textButton}</button
+						>
+					{/if}
 				</div>
 			</div>
 		</div>
