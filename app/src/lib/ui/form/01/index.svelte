@@ -39,7 +39,11 @@
 			console.error(error);
 		}
 	};
+
+
 	export let header;
+	export let subheader;
+	export let nameForm;
 </script>
 
 <div
@@ -55,29 +59,31 @@
 
 			<div class="mt-6 relative">
 				<div class="absolute inset-0 flex items-center" aria-hidden="true">
-					<div class="w-full border-t border-gray-300" />
+					<div class="w-full border-t border-gray-300"></div>
 				</div>
 				<div class="relative flex justify-center text-sm">
-					<span class="px-2 bg-white text-gray-500 "> бесплатно </span>
+					<span class="px-2 bg-white text-gray-500 "> {subheader} </span>
 				</div>
 			</div>
 
 			<div class="mt-6">
 				<form on:submit|preventDefault|once={sendConsultation} class="space-y-6">
-					<div>
-						<label for="name" class="sr-only">Имя</label>
-						<input
-								bind:value={name}
-							type="text"
-							name="name"
-							id="name"
-							autocomplete="name"
-							placeholder="Ваше имя"
-							required
-							class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
-					</div>
 
+					{#if (nameForm)}
+						<div>
+							<label for="name" class="sr-only">{nameForm}</label>
+							<input
+									bind:value={name}
+									type="text"
+									name="name"
+									id="name"
+									autocomplete="name"
+									placeholder="{nameForm}"
+									required
+									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+							/>
+						</div>
+					{/if}
 					<div>
 						<label for="phone" class="sr-only">Укажите телефон</label>
 						<input

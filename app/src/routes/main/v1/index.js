@@ -23,11 +23,15 @@ const apiMail = import.meta.env.VITE_API_MAIL
 const apiToken = import.meta.env.VITE_TOKEN
 
 const header = 'Экспресс заявка на замер';
+const subheader = 'Это бесплатно'
+const nameForm = 'Введите имя'
 
 const contentForm_v1 = {
 	apiMail,
 	apiToken,
-	header
+	header,
+	subheader,
+	nameForm
 };
 
 const contentMain_v1 = {
