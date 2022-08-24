@@ -44,6 +44,9 @@
 	export let header;
 	export let subheader;
 	export let nameForm;
+	export let phoneForm;
+	export let addressForm;
+	export let timeForm;
 </script>
 
 <div
@@ -84,57 +87,62 @@
 							/>
 						</div>
 					{/if}
-					<div>
-						<label for="phone" class="sr-only">Укажите телефон</label>
-						<input
-								bind:value={phone}
-							type="text"
-							name="phone"
-							id="phone"
-							autocomplete="phone"
-							placeholder="Укажите телефон"
-							required
-							class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
-					</div>
+					{#if (phoneForm)}
+						<div>
+							<label for="phone" class="sr-only">{phoneForm}</label>
+							<input
+									bind:value={phone}
+									type="text"
+									name="phone"
+									id="phone"
+									autocomplete="phone"
+									placeholder="{phoneForm}"
+									required
+									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+							/>
+						</div>
+					{/if}
+					{#if (addressForm)}
+						<div>
+							<label for="address" class="sr-only">{addressForm}</label>
+							<input
+									bind:value={address}
+									type="text"
+									name="address"
+									id="address"
+									autocomplete="address"
+									placeholder="{addressForm}"
+									required
+									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+							/>
+						</div>
+					{/if}
+					{#if (timeForm)}
+						<div>
+							<label for="time" class="sr-only">{timeForm}</label>
+							<input
+									bind:value={time}
+									type="text"
+									name="time"
+									id="time"
+									autocomplete="time"
+									placeholder="{timeForm}"
+									required
+									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+							/>
+						</div>
+					{/if}
 
-					<div>
-						<label for="address" class="sr-only">Адрес объекта</label>
-						<input
-								bind:value={address}
-							type="text"
-							name="address"
-							id="address"
-							autocomplete="address"
-							placeholder="Адрес объекта"
-							required
-							class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
-					</div>
-
-					<div>
-						<label for="time" class="sr-only">Удобное время</label>
-						<input
-								bind:value={time}
-							type="text"
-							name="time"
-							id="time"
-							autocomplete="time"
-							placeholder="Удобное время"
-							required
-							class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
-					</div>
 
 					<div>
 						{#if $form_01_sent}
 							<span
-								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
-								>Отправлено</span
+									class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
+							>Отправлено</span
 							>
 						{:else}
 							<button
-								type="submit"
+									type="submit"
 								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
 								>Отправить</button
 							>
