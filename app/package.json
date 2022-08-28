@@ -42,6 +42,8 @@
 		"@tailwindcss/typography": "^0.5.4",
 		"axios": "^0.27.2",
 		"chart.js": "^3.8.2",
+		"graphql": "^16.6.0",
+		"graphql-request": "^5.0.0",
 		"gsap": "^3.10.4",
 		"svelte-chartjs": "^2.0.1",
 		"swiper": "^8.3.2"

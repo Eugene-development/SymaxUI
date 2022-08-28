@@ -1,4 +1,26 @@
 <script>
+    import { request, gql } from 'graphql-request'
+
+    const query = gql`
+  query ProductsWhere {
+  product_where(key: 1234) {
+    id
+    key
+    text: value
+    property {
+      value
+    }
+    parentable {
+      ... on Category {
+        value
+      }
+
+    }
+  }
+}
+`
+
+    request('http://127.0.0.1:8001/graphql', query).then((data) => console.log(data))
 </script>
 <a href="/article/v1">article/v1</a>
 <br />
