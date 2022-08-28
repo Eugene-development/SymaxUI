@@ -31,6 +31,7 @@ const timeForm = 'Удобное время'
 const emailForm = 'Ваша почта'
 const variantForm = 'Нужный вариант'
 const volumeForm = 'Необходимый объём'
+const comment = 'После отправки заявки с вами свяжется менеджер для уточнения нюансов'
 
 
 const contentForm_v1 = {
@@ -44,7 +45,8 @@ const contentForm_v1 = {
 	timeForm,
 	emailForm,
 	variantForm,
-	volumeForm
+	volumeForm,
+	comment
 };
 
 const contentMain_v1 = {

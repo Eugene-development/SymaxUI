@@ -53,6 +53,7 @@
 	export let emailForm;
 	export let variantForm;
 	export let volumeForm;
+	export let comment
 </script>
 
 <div
@@ -208,7 +209,7 @@
 		</div>
 		<div class="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
 			<p class="text-xs leading-5 text-gray-500 text-center">
-				После отправки заявки с вами свяжется менеджер <strong>Евгений</strong> для уточнения нюансов
+				{comment}
 			</p>
 		</div>
 	</div>
