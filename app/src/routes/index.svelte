@@ -23,7 +23,9 @@
 //     request('http://127.0.0.1:8001/graphql', query).then((data) => console.log(data))
 
 
-    fetch('http://127.0.0.1:8001/graphql', {
+
+
+   fetch('http://127.0.0.1:8001/graphql', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -54,6 +56,39 @@
 
 
 
+async function getTest() {
+    let results = await fetch('http://127.0.0.1:8001/graphql', {
+        method: 'POST',
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+            query: `
+                query ProductsWhere {
+                  product_where(key: 1234) {
+                    id
+                    key
+                    text: value
+                    property {
+                      value
+                    }
+                    parentable {
+                      ... on Category {
+                        value
+                      }
+                }
+              }
+            }
+      `
+        })
+    })
+    let res = await results.json();
+    console.log(res.data)
+}
+
+getTest()
 
 </script>
 <a href="/article/v1">article/v1</a>
