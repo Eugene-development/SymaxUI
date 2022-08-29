@@ -56,16 +56,11 @@
 
 
 
-async function getTest() {
-    let results = await fetch('http://127.0.0.1:8001/graphql', {
-        method: 'POST',
 
-        headers: {
-            "Content-Type": "application/json"
-        },
 
-        body: JSON.stringify({
-            query: `
+
+
+   const testQuery = `
                 query ProductsWhere {
                   product_where(key: 1234) {
                     id
@@ -82,12 +77,20 @@ async function getTest() {
               }
             }
       `
+
+async function getTest() {
+    let results = await fetch('http://127.0.0.1:8001/graphql', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            query: testQuery
         })
     })
     let res = await results.json();
     console.log(res.data)
 }
-
 getTest()
 
 </script>
