@@ -22,9 +22,12 @@ const menu = [
 	}
 ];
 
+const company = 'Ромашка'
+
 const content_Header_v2 = {
 	menu,
-	logo
+	logo,
+	company
 };
 
 export const get = () => {

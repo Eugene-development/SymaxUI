@@ -4,6 +4,7 @@
 	const { invert } = useInvert;
 	const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
 	export let menu;
+	export let company;
 </script>
 
 {#if $visibleMobileMenu}
@@ -63,7 +64,7 @@
 				<!--                            class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700">Получить консультацию</button>-->
 				<!--                </div>-->
 				<div class="mt-2 px-5">
-					<p class="text-center text-sm font-medium text-gray-500">Услуга бесплатная</p>
+					<p class="text-center text-sm font-medium text-gray-500">Компания "{company}"</p>
 				</div>
 			</div>
 		</div>

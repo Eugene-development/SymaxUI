@@ -52,7 +52,7 @@
 								class="inline-flex items-center text-white bg-blue-400 rounded-md p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
 							>
 								<span
-									class="ml-0.5 px-4 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-sky-800 rounded-md"
+									class="ml-0.5 px-4 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-sky-600 rounded-md"
 									>{info}</span
 								>
 								<a href="/{link.path}" class="ml-4 p-1 text-sm">{link.value}</a>

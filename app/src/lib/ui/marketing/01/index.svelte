@@ -29,7 +29,7 @@
 						<img src={img_1} alt={alt_1} class="w-full h-96 object-center object-cover" />
 					</div>
 					{#each benefits_1 as { value }}
-						<p class="mt-8 text-base text-gray-500">{value}</p>
+						<p class="mt-8 text-base text-gray-500">{@html value}</p>
 					{/each}
 				</div>
 				<div>
@@ -37,7 +37,7 @@
 						<img src={img_2} alt={alt_2} class="w-full h-96 object-center object-cover" />
 					</div>
 					{#each benefits_2 as { value }}
-						<p class="mt-8 text-base text-gray-500">{value}</p>
+						<p class="mt-8 text-base text-gray-500">{@html value}</p>
 					{/each}
 				</div>
 			</div>

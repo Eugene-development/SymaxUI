@@ -11,7 +11,7 @@ const alt_2 = '';
 const benefits_1 = [
 	{
 		value:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, provident saepe. Alias error inventore magni optio quaerat quasi repellendus temporibus!'
+			'<strong>Lorem</strong> ipsum dolor sit amet, consectetur adipisicing elit. Aut, provident saepe. Alias error inventore magni optio quaerat quasi repellendus temporibus!'
 	},
 	{
 		value:

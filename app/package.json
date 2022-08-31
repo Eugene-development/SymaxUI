@@ -1,6 +1,6 @@
 {
 	"name": "symax",
-	"version": "0.0.50",
+	"version": "0.0.52",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",

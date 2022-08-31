@@ -190,13 +190,13 @@
 					<div>
 						{#if $form_01_sent}
 							<span
-									class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
+									class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-300 hover:from-blue-200 via-sky-600 hover:via-sky-700 to-blue-300 hover:to-blue-200 "
 							>Отправлено</span
 							>
 						{:else}
 							<button
 									type="submit"
-								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-green-300 hover:from-green-200 via-cyan-600 hover:via-cyan-700 to-green-300 hover:to-green-200 "
+								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-300 hover:from-blue-200 via-sky-600 hover:via-sky-700 to-blue-300 hover:to-blue-200 "
 								>Отправить</button
 							>
 						{/if}
